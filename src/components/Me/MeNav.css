@@ -1,0 +1,12 @@
+.navItem:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.navItem {
+    transition: 0.7s;
+}
+
+Row {
+    background-color: black;
+}

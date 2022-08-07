@@ -1,0 +1,123 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 0;
+  position: relative;
+}
+
+.menu {
+  width: 200px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  text-align: left;
+}
+
+.menu li  {
+  padding: 20px 0;
+    a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: $black;
+    padding: 0 10px;
+  }
+
+}
+
+.menu li:hover {
+    border: 1px solid $black
+}
+
+.icon {
+  padding: 0px 10px;
+  color: $black;
+  
+}
+
+
+// USE THIS AS REFERENCE FOR NAV POP OUT MENU 
+
+
+
+
+// p {
+//   margin: 5px;
+//   padding: 5px;
+//   color: gray;
+//   font-family: Veranda, Ariel, Sans-Serif;
+//   font-size: 12px;
+//   letter-spacing: 1px;
+// }
+
+// ul {
+//   font-family: Veranda, Ariel, Sans-Serif;
+//   font-size: 16px;
+//   padding: 0px;
+//   list-style: none;
+//   letter-spacing: 2px;
+//   text-align: center;
+// }
+
+// ul li {
+//   display: block;
+//   
+//   width: 150px;
+// }
+
+// li ul {
+//   display: none;
+//   margin: 0;
+// }
+
+// ul li a {
+//   display: block;
+//   text-decoration: none;
+//   background: gray;
+//   color: #000;
+//   border-top: 2px solid #666;
+//   padding: 5px 15px 5px 15px;
+//   margin-left: 1px;
+//   white-space: nowrap;
+// }
+
+// ul li a:hover {
+//   background: #949494;
+// }
+
+li:hover ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li {
+  float: left;
+  font-size: 11px;
+}
+
+// li:hover a {
+//   background: #A0A0A0;
+// }
+
+// li:hover li a:hover {
+//   background: #C2C2C2;
+// }
+
+ul li ul {
+  position: absolute;
+  left: 180px;
+  top: 0;
+}

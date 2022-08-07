@@ -1,0 +1,52 @@
+
+h1 {
+    padding: 10px 20px;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.introParagraph {
+    padding: 2rem 2rem;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: row;
+        p {
+            letter-spacing: 1.5px;
+            text-align: center;
+            padding: 5px 20px;
+        }
+}
+
+.ButtonBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkToUserInputPage, .submitButton, .LinkToDashboard {
+    background-color: $black;
+    color: $white;
+    margin: 20px;
+    border: none;
+    padding: 1em 2em;
+    text-transform: uppercase;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+// media Queries
+
+@media (max-width: 500px) {
+    .introParagraph {
+        flex-direction: column;
+    }
+}

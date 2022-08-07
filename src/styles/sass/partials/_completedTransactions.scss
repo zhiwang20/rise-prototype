@@ -1,0 +1,45 @@
+.listOfNotifications {
+  display: inline;
+}
+
+td {
+  height: 50px; 
+  width: 1000px;
+}
+
+.transferIcon {
+	height: 50px;
+	width: 50px;
+}
+
+tr {
+  text-align: center; 
+  vertical-align: middle;
+  border: solid black;
+  border-width: 0 8px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+input {
+  text-align: center;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+hr {
+  border: 0;
+  width: 96%;
+  color: #0a0a07;
+  height: 1px;
+}
+
+
+#line {
+  float: left;
+  width: 731px;
+  height: 20px;
+}

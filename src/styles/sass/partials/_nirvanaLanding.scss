@@ -1,0 +1,48 @@
+// Sass Variables for our font and colours as per the Figma Style Guide
+
+$baseFont: "Roboto", sans-serif;
+$black: #17202a;
+$white: #ffffff;
+$offWhtite: #fbfcfd;
+$lightGray: #e5e5e5;
+$darkGray: #ababab;
+
+// Styling for the Nirvana Nav links. These will contain sub menus as per the FIGMA design. These links route to their own React Components.
+
+.nirvanaLanding {
+	display: flex;
+	flex-direction: row;
+	ul {
+		display: flex;
+		list-style: none;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+	background-color: $white;
+	color: $black;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 1rem;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+	background-color: $white;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+}

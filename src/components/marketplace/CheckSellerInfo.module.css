@@ -1,0 +1,83 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+
+}
+
+.modal {
+    position: fixed;
+    top: 10vh;
+    left: 5%;
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    animation: slide-down 300ms ease-out forwards;
+    background: #fff;
+    overflow: scroll;
+
+}
+
+.prod_container {
+    width: 100%;
+    padding-right: auto;
+    padding-left: auto;
+}
+
+.card {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.seller {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.buttonGroup {
+    margin-bottom: 15px;
+}
+
+.sellerTitle {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.sellerAbout {
+    margin-top: -10px;
+    margin-bottom: 30px;
+    text-align: left;
+
+}
+
+
+@media (min-width: 200px) {
+    .modal {
+        width: 55rem;
+        height: 35rem;
+        left: calc(50% - 27rem);
+    }
+}
+
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
